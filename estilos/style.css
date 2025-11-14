@@ -13,7 +13,7 @@
   box-sizing: border-box;
 }
 :root {
-  --fundo-principal: #0000ff; 
+  --fundo-principal: #f6f6fa; 
   --texto: #010113;
   --texto-inverso: #f1f1f3;
   --destaque: #1d1dca;
@@ -53,4 +53,50 @@ nav#menu a {
 nav#menu a:hover {
   background-color: var(--destaque-inverso);
   color: var(--destaque)
+}
+main {
+  display: grid;
+  grid-template-columns: auto 90%vw auto;
+
+}
+section#ficha {
+  background-color: var(--fundo-card);
+  padding: 20px;
+  border-radius: 8px;
+  grid-column: 2;
+  gap: 20px;
+  margin-top: 20px;
+}
+section#ficha img {
+  width: 300px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid var(--fundo-principal);
+  outline: 5px solid var(--destaque-inverso);
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+}
+section#ficha h1 {
+  color: var(--destaque);
+  margin: 15px 0;
+  font-size: 1,5em;
+  text-align: justify;
+}
+div#social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  gap: 2em;
+  margin-top: 15px;
+}
+section a {
+  color: var(--destaque);
+  transition: color 0,5s;
+}
+section a:hover {
+  color: var(--destaque-inverso);
+
 }
